@@ -20,6 +20,7 @@ body {
     ) no-repeat fixed;
     background-size: cover;
     color: #424141FF;
+    caret-color: transparent;
 }
 
 .wrapper {
@@ -98,6 +99,7 @@ body {
     height: 4rem;
     display: flex;
     align-items: center;
+    caret-color: #424141FF;
 }
 
 .btn {
@@ -189,8 +191,8 @@ body {
 }
 
 #wastebasketIcon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 
  .done {
