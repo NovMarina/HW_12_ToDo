@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Merienda:wght@300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HR+Lijeva:wght@100..400&family=Poetsen+One&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+            45deg,
+            #000066FF 0%,
+            #57006BFF 21%,
+            #8A0067FF 30%,
+            #B8005FFF 39%,
+            #DB0054FF 46%,
+            #F63741FF 54%,
+            #FF692EFF 61%,
+            #FF970FFF 69%,
+            #FFBF00FF 79%,
+            #FFEA00FF 100%
+    ) no-repeat fixed;
+    background-size: cover;
+    color: #424141FF;
+}
+
+.wrapper {
+    position: relative;
+    margin: 80px auto;
+    width: 60vw;
+    min-height: 60vh;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px rgba(55, 54, 54, 0.58);
+    border-radius: 10px;
+}
+
+.cont {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+
+}
+
+.addBtn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(#f34079 40%, #fc894d);
+    border-image-slice: 1;
+    background: linear-gradient(#f34079 40%, #fc894d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.addBtn:active {
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: whitesmoke;
+}
+
+.secondLay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(71, 71, 71, 0.68);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.description {
+    background-color: whitesmoke;
+    color: #424141FF;
+    margin: 40px auto;
+    width: 40vw;
+    min-height: 15vh;
+    display: flex;
+    padding: 40px 20px;
+    border-radius: 10px;
+    border: 2px solid #424141FF;
+    position: relative;
+    flex-direction: column;
+
+}
+
+#textToDo {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.btn span {
+    padding: 0.3rem 0.3rem;
+    border: 2px solid transparent;
+    border-image: linear-gradient(#f34079 40%, #fc894d);
+    border-image-slice: 1;
+    background: linear-gradient(#f34079 40%, #fc894d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    gap: 10px;
+    margin: 0 0.3rem;
+}
+
+.btn span:hover {
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: whitesmoke;
+}
+
+#today {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 ;
+    padding: 0.35rem 0;
+    border-top: 2px solid #424141FF;
+    border-bottom: 2px solid #424141FF;
+}
+.toDo_list{
+    text-align: center;
+    width: 100%;
+    margin: 5px 0;
+}
+.rowToDo {
+    margin: 2px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 2rem;
+}
+
+.check {
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: #f34079 solid 2px;
+    padding: 0.3rem;
+    left: 0;
+    font-size: larger;
+}
+
+.wastebasket {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+    right: 0;
+}
+
+.task {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+    flex-wrap: wrap;
+}
+
+#wastebasketIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+ .done {
+    text-decoration: line-through;
+    color: gray;
+}
