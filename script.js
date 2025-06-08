@@ -25,7 +25,6 @@ cancelBtn.onclick = function () {
 }
 
 secLayAddBtn.addEventListener('click', function () {
-
     const textValue = inputText.value.trim();
     if (!textValue) return alert("No input data! Enter text or cancel.")
 
@@ -63,6 +62,3 @@ secLayAddBtn.addEventListener('click', function () {
     inputText.value = '';
     secondLay.style.display = "none";
 })
-
-
-
